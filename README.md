@@ -2,6 +2,9 @@
 
 A sophisticated real-time object detection and depth estimation system that combines state-of-the-art YOLOv5 for object detection with MiDaS for depth estimation. This project enables accurate object detection and relative distance estimation using a single camera, making it ideal for applications in robotics, autonomous systems, and computer vision research.
 
+> **Author:** Kevin Mastascusa  
+> **Last Updated:** June 15, 2024 9:54 PM
+
 ## 📜 Project Evolution
 
 The project began as a geometric-based distance estimation system using focal length calculations, where:
