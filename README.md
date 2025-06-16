@@ -1,16 +1,17 @@
-# Monocular Range Estimation
+# 🎯 Monocular Range Estimation
 
-A real-time object detection and depth estimation system that combines YOLOv5 for object detection with MiDaS for depth estimation. This project allows you to detect objects in a video stream and estimate their relative distances using a single camera.
+A sophisticated real-time object detection and depth estimation system that combines state-of-the-art YOLOv5 for object detection with MiDaS for depth estimation. This project enables accurate object detection and relative distance estimation using a single camera, making it ideal for applications in robotics, autonomous systems, and computer vision research.
 
-## Features
+## ✨ Features
 
-- Real-time object detection using YOLOv5
-- Depth estimation using MiDaS
-- Combined visualization of object detection and depth map
-- Distance estimation for detected objects
-- Support for webcam input
+- 🎥 Real-time object detection using YOLOv5
+- 📏 High-precision depth estimation using MiDaS
+- 🎨 Combined visualization of object detection and depth map
+- 📊 Distance estimation for detected objects
+- 📸 Support for webcam input
+- 🚀 Optimized for real-time performance
 
-## Requirements
+## 🛠️ Requirements
 
 - Python 3.8+
 - OpenCV
@@ -18,7 +19,7 @@ A real-time object detection and depth estimation system that combines YOLOv5 fo
 - ONNX Runtime
 - Other dependencies listed in `requirements.txt`
 
-## Installation
+## 📥 Installation
 
 1. Clone the repository:
 ```bash
@@ -42,20 +43,20 @@ pip install -r requirements.txt
 python download_models.py
 ```
 
-## Usage
+## 🚀 Usage
 
 Run the main script to start object detection and depth estimation:
 ```bash
 python ocular_core/distance_aware_object_detection.py
 ```
 
-### Controls
+### 🎮 Controls
 - Press 'q' to quit the application
 - The application will show two windows:
   - Object Detection: Shows the video feed with bounding boxes and distance estimates
   - Depth Map: Shows the depth estimation visualization
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 monocular-range-estimation/
@@ -67,29 +68,56 @@ monocular-range-estimation/
 └── README.md                              # This file
 ```
 
-## How It Works
+## 🔍 How It Works
 
-1. **Object Detection**: Uses YOLOv5 to detect objects in the video stream
-2. **Depth Estimation**: Uses MiDaS to estimate depth for each frame
-3. **Distance Calculation**: Combines detection and depth information to estimate object distances
-4. **Visualization**: Displays bounding boxes with distance estimates and a depth map
+1. **Object Detection** 🔍
+   - Uses YOLOv5 to detect objects in the video stream
+   - Processes frames in real-time
+   - Applies confidence thresholds for accurate detection
 
-## Model Information
+2. **Depth Estimation** 📏
+   - Uses MiDaS to estimate depth for each frame
+   - Generates high-quality depth maps
+   - Maintains temporal consistency
 
-- **YOLOv5**: Used for object detection
-  - Model: YOLOv5n (nano version)
-  - Input size: 640x640
-  - Confidence threshold: 0.45
+3. **Distance Calculation** 📊
+   - Combines detection and depth information
+   - Estimates relative distances to objects
+   - Provides real-time distance updates
 
-- **MiDaS**: Used for depth estimation
-  - Model: MiDaS small v3
-  - Input size: 384x384
-  - Output: Relative depth map
+4. **Visualization** 🎨
+   - Displays bounding boxes with distance estimates
+   - Shows depth map with color-coded distances
+   - Updates in real-time
 
-## Contributing
+## 🤖 Model Information
 
-Feel free to submit issues and enhancement requests!
+### YOLOv5
+- **Model**: YOLOv5n (nano version)
+- **Input Size**: 640x640
+- **Confidence Threshold**: 0.45
+- **Performance**: Optimized for real-time inference
 
-## License
+### MiDaS
+- **Model**: MiDaS small v3
+- **Input Size**: 384x384
+- **Output**: Relative depth map
+- **Features**: High-quality depth estimation
+
+## 🤝 Contributing
+
+We welcome contributions! Please feel free to:
+- Submit issues and enhancement requests
+- Fork the repository and create pull requests
+- Improve documentation
+- Add new features
+
+## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- YOLOv5 team for the excellent object detection model
+- MiDaS team for the depth estimation model
+- OpenCV community for the computer vision tools
