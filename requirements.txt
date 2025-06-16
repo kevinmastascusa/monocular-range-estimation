@@ -1,0 +1,12 @@
+torch>=2.0
+onnx
+onnxruntime
+opencv-python
+pyyaml
+requests
+certifi
+numpy
+pandas
+Pillow
+seaborn
+timm 
